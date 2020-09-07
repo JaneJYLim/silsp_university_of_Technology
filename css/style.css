@@ -127,16 +127,18 @@ ul {
 
 #lnb {
     width: 1200px;
+    text-align: right;
+    padding-right: 19px;
     position: absolute;
     top: 100px;
-    left: 75px;
-    padding-left: 528px;
     background-color: rgb(12, 155, 190);
     z-index: 2;
     display: none;
 }
 
 #lnb .subMenu {
+    width: 660px;
+    display: inline-block;
     position: relative;
     left: 11px;
 }
@@ -148,7 +150,18 @@ ul {
     font-size: 17px;
     text-align: center;
     display: inline-block;
-    /* border: 1px solid #000; */
+}
+
+#lnb .subMenu li a:nth-child(2) {
+    transform: translateX(-2px);
+}
+
+#lnb .subMenu li a:nth-child(3) {
+    transform: translateX(-6px);
+}
+
+#lnb .subMenu li a:last-child {
+    transform: translateX(-9px);
 }
 
 #lnb li a:hover {
